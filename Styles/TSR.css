@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.8;
+  font-family: "Be Vietnam Pro", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  background: #222;
+  color: white;
+  padding: 2rem 1rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 1rem;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #00aaff;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 600px) {
+  .skills-container {
+    width: 100%;
+  }
+}
+
+.links-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center; /* mantém centralizado */
+}
+
+.links-vertical a {
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.links-vertical a:hover {
+  text-decoration: underline;
+}
+
+.links-group {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Container geral */
+.about-main {
+  text-align: center;
+}
+
+/* Container das "pastas" */
+.groups-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Cada "pasta" */
+.links-group {
+  width: 280px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Título da pasta */
+.links-group h3 {
+  margin-bottom: 10px;
+}
+
+/* Links */
+.links-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.links-vertical a {
+  text-decoration: none;
+  color: #0073e6;
+  transition: 0.3s;
+}
+
+.links-vertical a:hover {
+  text-decoration: underline;
+}
